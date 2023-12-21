@@ -5,6 +5,7 @@ public class whilePrimeNo {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number:");
         int num = scan.nextInt();
+        scan.close();
         int i = 1;
         int cf = 1;
         while (i <= num) {
