@@ -10,7 +10,6 @@ public class ArrengeNoInAscendingOrder {
         for (int i = 0; i < n; i++) {
             arr[i] = art.nextInt();
         }
-        int D = 0;
         for (int i = 0; i < n - 1; i++) {
             if (arr[i] > arr[i + 1]) {
                 arr[i + 1] = arr[i];
@@ -19,10 +18,9 @@ public class ArrengeNoInAscendingOrder {
             }
         }
         System.out.println("The greatest No : " + arr[n - 1]);
-
-        // for (int j = 0; j <= n; j++) {
-        // System.out.println("The Elements are: " + arr[j]);
-        // }
+        for (int i = n - 1; i >= 0; i--) {
+            System.out.println("The Elements are: " + arr[i]);
+        }
         art.close();
     }
 }
