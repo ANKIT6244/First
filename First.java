@@ -11,5 +11,6 @@ public class First {
             i--;
         } while (i >= 1);
         scan.close();
+
     }
 }
