@@ -15,10 +15,14 @@ public class TaxCalculator {
         Long[] arry = new Long[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.println("Enter Name " + (i + 1) + ":");
-            arr[i] = scan.nextLine();
+            scan.nextLine();
+            System.out.println("Enter Name " + (i + 1) + " :");
+            arr[i] = scan.nextLine(); /*
+                                       * For more than word use scan.nextLine(); & And for only One word use
+                                       * scan.next();
+                                       */
 
-            System.out.println("Enter the " + arr[i] + " Income:");
+            System.out.println("Enter " + arr[i] + "'s Annual Income:");
             arry[i] = scan.nextLong();
 
         }
