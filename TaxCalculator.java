@@ -5,8 +5,7 @@ public class TaxCalculator {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("\n     Tax Calculator App    ");
-        System.out.println(" ---------WELCOME----------");
+        System.out.println("\n   Tax Calculator App    \n---------WELCOME----------");
         System.out.println("\nEnter total Person Count:");
         int n = scan.nextInt();
 
@@ -16,16 +15,15 @@ public class TaxCalculator {
         for (int i = 0; i < n; i++) {
             System.out.println("Enter Name " + (i + 1) + " :");
             arr[i] = scan.next(); /*
-                                   * For more than word use scan.nextLine(); & And for only One word use
+                                   * For more than word use scan.nextLine() two times ; & And for only One word
+                                   * use
                                    * scan.next();
                                    */
 
             System.out.println("Enter " + arr[i] + "'s Annual Income:");
             arry[i] = scan.nextLong();
         }
-        System.out.println("\n Names with liable taxes");
-        System.out.println("-----------------------------");
-        System.out.println();
+        System.out.println("\n  Names with liable taxes\n-----------------------------");
 
         for (int i = 0; i < n; i++) {
             calculateTax(arr[i], arry[i]);
